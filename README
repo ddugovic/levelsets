@@ -1,15 +1,11 @@
-This is a collection of level sets for the Chip's Challange Planner
-It can be copied directlly into a tile world source code checkout
-and it will put the files in the correct directories
+This is a collection of level sets for the Tile World Planner.
+The data directory contains levelsets, and the sets directory contains *.dac
+files containing Tile World levelset metadata (which ruleset to use).
 
-The data directory has the levelsets, and the sets directory has the *.dac
-files which tell Tile World about the levelsets (which ruleset to use).
+Additionally, c4 is the perl script to convert between level formats.
 
-c4 is the perl script to convert between level formats.
+For example, classical.txt was generated with the command:
+$ c4 data/classical.dat classical.txt
 
-For example classical.txt was generated from classical.dat with the command:
-
-c4 data/classical.dat classical.txt
-
-TXT level format information is here: http://manpages.ubuntu.com/manpages/hardy/man6/c4.6.html
-
+TXT level format and c4 documentation can be viewed with the command:
+$ perldoc c4
